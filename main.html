@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Codeinfrastructure | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="#" class="logo">My Portfolio</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -30,16 +31,44 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-                <h2 class="hero-subtitle">A [Your Profession] based in [Your Location]</h2>
-                <p class="hero-desc">I create [mention what you do] that solves problems and delivers value.</p>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Codeinfrastructure</span></h1>
+                <h2 class="hero-subtitle">An Intermediate Developer based in the Netherlands</h2>
+                <p class="hero-desc">I create web solutions that solve problems and deliver value through clean, efficient code.</p>
+                
+                <!-- Buttons -->
                 <a href="#projects" class="btn">View My Work</a>
                 <a href="#contact" class="btn btn-outline">Contact Me</a>
+                
+                <!-- Social Icons in Hero Section -->
+                <div class="hero-social">
+                    <a href="https://github.com/Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://youtube.com/@Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com/@Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
+            
+            <!-- Profile Photo Section -->
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <!-- Replace with your image -->
-                    <i class="fas fa-user-circle"></i>
+                <div class="profile-image-container">
+                    <!-- Circular profile image -->
+                    <div class="profile-image-wrapper">
+                        <img src="s.png" alt="Codeinfrastructure Profile Photo" class="profile-photo" id="profile-img">
+                        <div class="profile-fallback" id="profile-fallback">
+                            <i class="fas fa-user"></i>
+                            <span>CI</span>
+                        </div>
+                    </div>
+                    <!-- Animated background circle -->
+                    <div class="profile-bg-circle"></div>
                 </div>
             </div>
         </div>
@@ -51,22 +80,24 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm a passionate [your profession] with experience in [your field]. I enjoy creating [mention your work style] that makes a difference.</p>
-                    <p>My journey began [brief background]. Since then, I've worked on various projects involving [technologies/tools].</p>
-                    <p>When I'm not working, I love [hobbies/interests].</p>
-                    <a href="#" class="btn">Download Resume</a>
+                    <p>Hello! I'm Codeinfrastructure, an intermediate developer passionate about creating efficient web solutions. I enjoy building applications that solve real-world problems and deliver exceptional user experiences.</p>
+                    <p>My journey in development started with a curiosity about how websites work, which led me to learn HTML, CSS, and JavaScript. Since then, I've expanded my skills to include modern frameworks and tools.</p>
+                    <p>When I'm not coding, I enjoy contributing to open-source projects, learning about new technologies, and sharing knowledge with the developer community.</p>
+                    <a href="resume.pdf" class="btn" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
-                        <h3>5+</h3>
+                        <h3>8+</h3>
                         <p>Projects Completed</p>
                     </div>
                     <div class="stat">
-                        <h3>2+</h3>
+                        <h3>3+</h3>
                         <p>Years Experience</p>
                     </div>
                     <div class="stat">
-                        <h3>10+</h3>
+                        <h3>15+</h3>
                         <p>Technologies Used</p>
                     </div>
                 </div>
@@ -82,19 +113,24 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <div class="img-placeholder">Project 1</div>
+                        <div class="img-placeholder">Portfolio Website</div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title 1</h3>
-                        <p>A brief description of what this project is about and what technologies you used.</p>
+                        <h3>Responsive Portfolio</h3>
+                        <p>A fully responsive portfolio website built with HTML, CSS, and JavaScript. Features smooth animations and mobile-first design.</p>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
+                            <span>Responsive</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Codeinfrastructure/portfolio" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -102,19 +138,23 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <div class="img-placeholder">Project 2</div>
+                        <div class="img-placeholder">Task Manager</div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title 2</h3>
-                        <p>A brief description of what this project is about and what technologies you used.</p>
+                        <h3>Task Management App</h3>
+                        <p>A React-based task management application with drag-and-drop functionality and local storage.</p>
                         <div class="project-tags">
                             <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span>CSS Modules</span>
+                            <span>Local Storage</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Codeinfrastructure/task-manager" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -122,19 +162,23 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <div class="img-placeholder">Project 3</div>
+                        <div class="img-placeholder">API Dashboard</div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title 3</h3>
-                        <p>A brief description of what this project is about and what technologies you used.</p>
+                        <h3>Weather API Dashboard</h3>
+                        <p>A weather dashboard that fetches data from a public API and displays it with interactive charts.</p>
                         <div class="project-tags">
-                            <span>Python</span>
-                            <span>Data Analysis</span>
-                            <span>Visualization</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>Chart.js</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Codeinfrastructure/weather-dashboard" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -148,34 +192,36 @@
             <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Technical Skills</h3>
+                    <h3>Frontend</h3>
                     <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Python</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
+                        <li>Bootstrap</li>
+                        <li>SASS/SCSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Tools</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
                         <li>Git & GitHub</li>
-                        <li>UI/UX Design</li>
+                        <li>MongoDB</li>
+                        <li>Firebase</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Soft Skills</h3>
                     <ul>
                         <li>Problem Solving</li>
-                        <li>Communication</li>
                         <li>Team Collaboration</li>
-                        <li>Time Management</li>
+                        <li>Communication</li>
+                        <li>Project Management</li>
                         <li>Adaptability</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>Adobe Creative Suite</li>
-                        <li>Notion</li>
-                        <li>Slack</li>
+                        <li>Continuous Learning</li>
                     </ul>
                 </div>
             </div>
@@ -189,23 +235,29 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Work Together!</h3>
-                    <p>Feel free to reach out for collaborations or just a friendly hello.</p>
+                    <p>Feel free to reach out for collaborations, job opportunities, or just a friendly chat about technology.</p>
                     <div class="contact-details">
-                        <p><i class="fas fa-envelope"></i> your.email@example.com</p>
-                        <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+                        <p><i class="fas fa-envelope"></i> hello@codeinfrastructure.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Netherlands</p>
                     </div>
+                    
+                    <!-- Social Icons in Contact Section -->
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://youtube.com/@Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com/@Codeinfrastructure" target="_blank" rel="noopener noreferrer" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required id="name">
+                    <input type="email" placeholder="Your Email" required id="email">
+                    <textarea placeholder="Your Message" rows="5" required id="message"></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
@@ -215,7 +267,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Codeinfrastructure. All rights reserved.</p>
             <p>Made with <i class="fas fa-heart"></i> and a lot of coffee</p>
         </div>
     </footer>
